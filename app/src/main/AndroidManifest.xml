@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.github.httpdhruvaalam.checkyourbias">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UI.MainSearchActivity">
+
+        </activity>
+        <activity
+            android:name=".UI.SearchResults"
+            android:parentActivityName=".UI.MainSearchActivity" />
+        <activity
+            android:name=".UI.AuthorProfile"
+            android:label="@string/title_activity_author_profile"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".UI.SearchResults">
+        </activity>
+        <activity
+            android:name=".UI.ArticleInfo"
+            android:label="@string/title_activity_article_info"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".UI.MainSearchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

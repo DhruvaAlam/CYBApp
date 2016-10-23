@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/alternative_row_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Article Name"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/alternative_row_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.examplewebsite.com"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:scrollHorizontally="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="8dp"/>
+
+</LinearLayout>
